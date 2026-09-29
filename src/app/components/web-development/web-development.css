@@ -1,0 +1,4 @@
+/* Stroke effect for the outlined 'Website' heading */
+    .stroke-text {
+      -webkit-text-stroke: 1.5px #0f172a;
+    }

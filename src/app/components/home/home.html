@@ -1,52 +1,722 @@
-<!-- Hero Section -->
-<section class="text-black py-24 relative overflow-hidden">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="max-w-3xl">
-      <span
-        class="bg-sunflower-500/20 text-sunflower-400 px-3 py-1 rounded-full text-sm font-medium"
-        >Next-Gen Connectivity</span
-      >
-      <h1 class="text-5xl md:text-6xl font-extrabold mt-6 leading-tight">
-        High-Speed Network Infrastructure Built for the Future.
+<div>
+  <div class="relative  min-h-screen w-full bg-white text-black font-sans overflow-x-hidden flex items-center justify-center p-4 sm:p-8 md:p-12 lg:p-16">
+      
+  <!-- Grid Background Pattern -->
+  <div 
+    class="absolute inset-0 opacity-15 pointer-events-none"
+    style="background-size: 48px 48px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 1px, transparent 1px);"
+  ></div>
+
+  <main class="relative z-10 max-w-7xl w-full mx-auto py-8 md:py-12">
+    
+    <!-- Top Headline Section -->
+    <div class="mb-8 md:mb-12 lg:mb-16">
+      
+      <div class="flex flex-wrap items-center gap-4 md:gap-8 mb-2 sm:mb-4">
+        <!-- First Headline Word -->
+        <h1 class="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tight text-black leading-none">
+          Best
+        </h1>
+
+        <!-- Connecting Arrow Line & Mint Arc -->
+        <div class="flex-1 min-w-[120px] max-w-[280px] sm:max-w-[360px] flex items-center relative py-4">
+          <div class="w-full h-[1px] bg-black/20"></div>
+          
+          <!-- Mint Semi-Circle Arc -->
+          <div class="absolute left-1/2 -translate-x-1/2 -top-1">
+            <svg class="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 text-[#10b981] fill-current" viewBox="0 0 100 100">
+              <path d="M 20 80 A 40 40 0 0 1 80 80 L 60 80 A 20 20 0 0 0 40 80 Z" />
+            </svg>
+          </div>
+
+          <!-- Line Arrow Head -->
+          <div class="absolute right-0 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent border-l-[6px] border-l-black/40"></div>
+        </div>
+      </div>
+
+      <!-- Main Headline Continuation -->
+      <h1 class="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tight text-black leading-[1.05]">
+        Place for Creative<br />
+        Digital Solutions
       </h1>
-      <p class="mt-6 text-xl text-slate-300">
-        SunflowerNetwork delivers ultra-low latency fiber solutions, cloud interconnection, and
-        managed IT services for modern businesses.
-      </p>
-      <div class="mt-8 flex gap-4">
-        <a
-          routerLink="/services"
-          class="bg-sunflower-500 text-slate-900 px-6 py-3 rounded-lg font-bold hover:bg-sunflower-400 transition"
-          >Explore Services</a
+
+    </div>
+
+    <!-- Bottom Content Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end relative">
+      
+      <!-- Column 1: Subtitle & CTA Buttons -->
+      <div class="lg:col-span-5 flex flex-col justify-between space-y-6 md:space-y-8 lg:pb-2">
+        
+        <p class="text-neutral-700 text-sm sm:text-base leading-relaxed max-w-md font-normal">
+          Unlock the Power of Web Presence with our Professional Website Designing Service! Elevate Your Online Presence with Stunning Website Designs.
+        </p>
+
+        <!-- Line Divider with Arrow -->
+        <div class="relative w-full max-w-xs py-2">
+          <div class="w-full h-[1px] bg-black/20"></div>
+          <div class="absolute right-0 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[4px] border-t-transparent border-b-[4px] border-b-transparent border-l-[6px] border-l-black/40"></div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <a 
+            href="#get-started" 
+            class="px-6 py-3.5 border border-black text-black text-xs sm:text-sm font-semibold tracking-wider hover:bg-black hover:text-black transition-all duration-300 flex items-center space-x-2 group"
+          >
+            <span>GET STARTED</span>
+            <span class="group-hover:translate-x-1 transition-transform duration-200">&rarr;</span>
+          </a>
+
+          <a 
+            href="#see-pricing" 
+            class="px-6 py-3.5 border border-black/80 text-black text-xs sm:text-sm font-semibold tracking-wider hover:border-black hover:bg-black hover:text-black transition-all duration-300 flex items-center space-x-2 group"
+          >
+            <span>SEE PRICING</span>
+            <span class="group-hover:translate-x-1 transition-transform duration-200">&rarr;</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Column 2: Hero Image -->
+      <div class="lg:col-span-5 relative mt-6 lg:mt-0">
+        <div class="rounded-none sm:rounded-lg overflow-hidden border border-black/10 shadow-xl relative bg-neutral-100">
+          <img 
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" 
+            alt="Team collaborating on website design" 
+            class="w-full h-[280px] sm:h-[350px] md:h-[400px] object-cover brightness-100 contrast-105 hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+      </div>
+
+      <!-- Column 3: Mint Green Badge (Explore More) -->
+      <div class="lg:col-span-2 flex justify-start lg:justify-end items-center mt-6 lg:mt-0">
+        <a 
+          href="#explore" 
+          class="group w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-[#10b981] hover:bg-[#059669] text-black flex flex-col items-center justify-center p-4 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-[#10b981]/20"
         >
-        <a
-          routerLink="/contact"
-          class="border border-slate-700 text-black px-6 py-3 rounded-lg font-semibold hover:bg-slate-800 transition"
-          >Contact Us</a
-        >
+          <div class="flex items-center justify-center w-8 h-8 mb-1">
+            <svg 
+              class="w-5 h-5 sm:w-6 sm:h-6 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" 
+              fill="none" 
+              stroke="currentColor" 
+              stroke-width="2.5" 
+              viewBox="0 0 24 24"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </div>
+          <span class="text-xs sm:text-sm font-bold text-center leading-tight">
+            Explore<br />More
+          </span>
+        </a>
+      </div>
+
+    </div>
+
+  </main> 
+
+</div>
+
+    <div class="min-h-screen w-full bg-white text-slate-900 font-sans py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto space-y-12">
+        
+        <!-- Header Section -->
+        <header class="text-center space-y-3 max-w-3xl mx-auto">
+          <!-- Top Tag -->
+          <div class="inline-flex items-center gap-2 text-emerald-600 font-semibold text-xs sm:text-sm tracking-wide">
+            <span class="w-6 h-[2px] bg-emerald-500"></span>
+            <span>All Services</span>
+          </div>
+
+          <!-- Section Title -->
+          <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900">
+            Our Services
+          </h1>
+
+          <!-- Description -->
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Comprehensive Website Services to Ignite Your Online Success. Empower Your Business with Powerful Online Services from our Website.
+          </p>
+        </header>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          
+          <!-- Card 1: Website Development (Active / Highlighted State) -->
+          <div class="group relative bg-[#10b981] rounded-2xl overflow-hidden shadow-lg border border-emerald-500 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1">
+            <!-- Top Content Area -->
+            <div class="p-6 relative">
+              <!-- Arrow Icon Badge -->
+              <div class="absolute top-6 right-6 w-9 h-9 bg-black text-white rounded-lg flex items-center justify-center">
+                <svg class="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </div>
+
+              <!-- Service Icon -->
+              <div class="w-14 h-14 mb-8 text-black">
+                <svg class="w-full h-full" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-xl font-bold text-black leading-tight">
+                Website Development
+              </h3>
+            </div>
+
+            <!-- Bottom Image Preview -->
+            <div class="h-36 w-full overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" 
+                alt="Website Development" 
+                class="w-full h-full object-cover grayscale brightness-90 group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+          <!-- Card 2: App Development -->
+          <div class="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-500 transition-all duration-300 hover:-translate-y-1">
+            <div class="p-6 relative">
+              <div class="absolute top-6 right-6 w-9 h-9 bg-slate-100 border border-slate-200 text-emerald-600 rounded-lg flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-200">
+                <svg class="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </div>
+
+              <div class="w-12 h-12 mb-8 text-emerald-600">
+                <svg class="w-full h-full" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+              </div>
+
+              <h3 class="text-xl font-bold text-slate-900 leading-tight">
+                App Development
+              </h3>
+            </div>
+
+            <div class="h-36 w-full overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80" 
+                alt="App Development" 
+                class="w-full h-full object-cover grayscale opacity-90 group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+          <!-- Card 3: Digital Marketing -->
+          <div class="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-500 transition-all duration-300 hover:-translate-y-1">
+            <div class="p-6 relative">
+              <div class="absolute top-6 right-6 w-9 h-9 bg-slate-100 border border-slate-200 text-emerald-600 rounded-lg flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-200">
+                <svg class="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </div>
+
+              <div class="w-12 h-12 mb-8 text-emerald-600">
+                <svg class="w-full h-full" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                </svg>
+              </div>
+
+              <h3 class="text-xl font-bold text-slate-900 leading-tight">
+                Digital Marketing
+              </h3>
+            </div>
+
+            <div class="h-36 w-full overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80" 
+                alt="Digital Marketing" 
+                class="w-full h-full object-cover grayscale opacity-90 group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+          <!-- Card 4: Website Maintenance -->
+          <div class="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-500 transition-all duration-300 hover:-translate-y-1">
+            <div class="p-6 relative">
+              <div class="absolute top-6 right-6 w-9 h-9 bg-slate-100 border border-slate-200 text-emerald-600 rounded-lg flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-200">
+                <svg class="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </div>
+
+              <div class="w-12 h-12 mb-8 text-emerald-600">
+                <svg class="w-full h-full" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+
+              <h3 class="text-xl font-bold text-slate-900 leading-tight">
+                Website Maintenance
+              </h3>
+            </div>
+
+            <div class="h-36 w-full overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" 
+                alt="Website Maintenance" 
+                class="w-full h-full object-cover grayscale opacity-90 group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Center Bottom Grid Section (Graphic Design & Domain & Hosting) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          
+          <!-- Card 5: Graphic Design -->
+          <div class="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-500 transition-all duration-300 hover:-translate-y-1">
+            <div class="p-6 relative">
+              <div class="absolute top-6 right-6 w-9 h-9 bg-slate-100 border border-slate-200 text-emerald-600 rounded-lg flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-200">
+                <svg class="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </div>
+
+              <div class="w-12 h-12 mb-8 text-emerald-600">
+                <svg class="w-full h-full" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                </svg>
+              </div>
+
+              <h3 class="text-xl font-bold text-slate-900 leading-tight">
+                Graphic Design
+              </h3>
+            </div>
+
+            <div class="h-36 w-full overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80" 
+                alt="Graphic Design" 
+                class="w-full h-full object-cover grayscale opacity-90 group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+          <!-- Card 6: Domain & Hosting -->
+          <div class="group relative bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-500 transition-all duration-300 hover:-translate-y-1">
+            <div class="p-6 relative">
+              <div class="absolute top-6 right-6 w-9 h-9 bg-slate-100 border border-slate-200 text-emerald-600 rounded-lg flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-200">
+                <svg class="w-4 h-4 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+              </div>
+
+              <div class="w-12 h-12 mb-8 text-emerald-600">
+                <svg class="w-full h-full" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                </svg>
+              </div>
+
+              <h3 class="text-xl font-bold text-slate-900 leading-tight">
+                Domain & Hosting
+              </h3>
+            </div>
+
+            <div class="h-36 w-full overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" 
+                alt="Domain & Hosting" 
+                class="w-full h-full object-cover grayscale opacity-90 group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
-  </div>
-</section>
 
-<!-- Stats Section -->
-<section class="py-12 bg-sunflower-500 text-slate-950 font-bold">
-  <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-    <div>
-      <div class="text-4xl">99.999%</div>
-      <div class="text-sm opacity-80 mt-1">Uptime SLA</div>
+    <div class="min-h-screen w-full bg-white text-slate-900 font-sans py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto space-y-16">
+        
+        <!-- Top Section: Content & Visual Artwork Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column: Headline, Description & Tags -->
+          <div class="lg:col-span-7 space-y-8">
+            <!-- Main Heading -->
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+              One-stop digital marketing services 🎯
+            </h1>
+
+            <!-- Highlighted Description with Left Border -->
+            <div class="border-l-4 border-emerald-500 pl-4 py-1">
+              <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                Get benefits with the best Digital Marketing Service with unique strategies. Improve the search visibility of your website with the proper techniques of our digital marketing experts. Boost sales and optimize your page for more user engagement.
+              </p>
+            </div>
+
+            <!-- Feature Tag Pills Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 pt-2">
+              <div class="bg-slate-50 border border-slate-200 shadow-sm rounded-full py-3 px-4 text-center font-bold text-xs sm:text-sm text-slate-900 tracking-wider hover:border-emerald-500 hover:shadow-md transition-all">
+                CONVERSION
+              </div>
+              <div class="bg-slate-50 border border-slate-200 shadow-sm rounded-full py-3 px-4 text-center font-bold text-xs sm:text-sm text-slate-900 tracking-wider hover:border-emerald-500 hover:shadow-md transition-all">
+                OPTIMIZATION
+              </div>
+              <div class="bg-slate-50 border border-slate-200 shadow-sm rounded-full py-3 px-4 text-center font-bold text-xs sm:text-sm text-slate-900 tracking-wider hover:border-emerald-500 hover:shadow-md transition-all">
+                ECOMMERCE
+              </div>
+              <div class="bg-slate-50 border border-slate-200 shadow-sm rounded-full py-3 px-4 text-center font-bold text-xs sm:text-sm text-slate-900 tracking-wider hover:border-emerald-500 hover:shadow-md transition-all">
+                ANALYTIC
+              </div>
+              <div class="bg-slate-50 border border-slate-200 shadow-sm rounded-full py-3 px-4 text-center font-bold text-xs sm:text-sm text-slate-900 tracking-wider hover:border-emerald-500 hover:shadow-md transition-all leading-tight flex items-center justify-center">
+                LINK BUILDING
+              </div>
+              <div class="bg-slate-50 border border-slate-200 shadow-sm rounded-full py-3 px-4 text-center font-bold text-xs sm:text-sm text-slate-900 tracking-wider hover:border-emerald-500 hover:shadow-md transition-all">
+                STRATEGY
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Abstract Masked Image Collage -->
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="relative w-full max-w-md h-80 sm:h-96 flex items-center justify-center">
+              
+              <!-- Background Emerald Decorative Ring -->
+              <div class="absolute right-2 bottom-4 w-48 h-48 sm:w-56 sm:h-56 rounded-full border-[18px] border-emerald-400 opacity-90 -z-0"></div>
+
+              <!-- Pill 1 (Left Image Capsule) -->
+              <div class="absolute left-4 top-8 w-24 sm:w-28 h-56 sm:h-64 rounded-full overflow-hidden shadow-lg -rotate-12 border-2 border-white z-10">
+                <img 
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" 
+                  alt="Marketing Team Professional" 
+                  class="w-full h-full object-cover scale-125"
+                />
+              </div>
+
+              <!-- Pill 2 (Center Image Capsule) -->
+              <div class="absolute left-28 sm:left-32 top-0 w-24 sm:w-28 h-64 sm:h-72 rounded-full overflow-hidden shadow-xl -rotate-12 border-2 border-white z-20">
+                <img 
+                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" 
+                  alt="Team Collaboration" 
+                  class="w-full h-full object-cover scale-125"
+                />
+              </div>
+
+              <!-- Pill 3 (Right Image Capsule) -->
+              <div class="absolute left-52 sm:left-60 top-12 w-24 sm:w-28 h-56 sm:h-64 rounded-full overflow-hidden shadow-lg -rotate-12 border-2 border-white z-30">
+                <img 
+                  src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80" 
+                  alt="Digital Strategy" 
+                  class="w-full h-full object-cover scale-125"
+                />
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Section: 3-Step Process Grid -->
+        <div class="pt-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+            
+            <!-- Step 01: Web Inspection -->
+            <div class="relative bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center space-y-4 shadow-sm hover:border-emerald-400 transition-all">
+              <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest block">Step 01</span>
+              <h3 class="text-xl font-bold text-slate-900">Web Inspection</h3>
+              <div class="w-12 h-0.5 bg-slate-300 mx-auto"></div>
+              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Proper inspection of a website with the best tools for the next stage.
+              </p>
+            </div>
+
+            <!-- Arrow Divider 1 (Desktop Only) -->
+            <div class="hidden md:flex absolute left-[32%] z-10 -translate-x-1/2 items-center justify-center text-slate-400">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </div>
+
+            <!-- Step 02: Deep Optimization (Active Highlight Card) -->
+            <div class="relative bg-emerald-400 rounded-2xl p-6 text-center space-y-4 shadow-md text-slate-950 transition-all hover:scale-[1.02]">
+              <span class="text-xs font-extrabold text-slate-900 uppercase tracking-widest block">Step 02</span>
+              <h3 class="text-xl font-extrabold text-slate-950">Deep Optimization</h3>
+              <div class="w-12 h-0.5 bg-slate-900/30 mx-auto"></div>
+              <p class="text-slate-900 text-xs sm:text-sm font-medium leading-relaxed">
+                Optimizing the website with special strategies by covering all its needs.
+              </p>
+            </div>
+
+            <!-- Arrow Divider 2 (Desktop Only) -->
+            <div class="hidden md:flex absolute left-[65%] z-10 -translate-x-1/2 items-center justify-center text-slate-400">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+            </div>
+
+            <!-- Step 03: Analyze Growth -->
+            <div class="relative bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center space-y-4 shadow-sm hover:border-emerald-400 transition-all">
+              <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest block">Step 03</span>
+              <h3 class="text-xl font-bold text-slate-900">Analyze Growth</h3>
+              <div class="w-12 h-0.5 bg-slate-300 mx-auto"></div>
+              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                Expert analysis of website data for deploying a strategy for further growth.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div>
-      <div class="text-4xl">10 Gbps+</div>
-      <div class="text-sm opacity-80 mt-1">Fiber Speed</div>
+
+    <div class="min-h-screen w-full bg-white text-slate-900 font-sans py-12 px-4 sm:px-6 lg:px-8 flex items-center">
+      <div class="max-w-7xl mx-auto w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Left Column: Title, Subtitle & Accordion FAQ -->
+          <div class="lg:col-span-7 space-y-8">
+            <!-- Header Section -->
+            <div class="space-y-3">
+              <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900">
+                E-commerce Integration
+              </h1>
+              <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl">
+                Specializing the website with unique E-commerce features integration to develop a user-centric web page.
+              </p>
+            </div>
+
+            <!-- Accordion List -->
+            <div class="space-y-4 pt-2">
+              <div 
+                *ngFor="let item of faqList; trackBy: trackById" 
+                class="border-b border-slate-200 pb-4 transition-all duration-200"
+              >
+                <!-- Question Row -->
+                <button 
+                  (click)="toggleAccordion(item.id)" 
+                  class="w-full flex items-center justify-between text-left py-2 group focus:outline-none"
+                >
+                  <span class="text-xs sm:text-sm font-extrabold tracking-wider uppercase text-slate-900 group-hover:text-emerald-600 transition-colors pr-4">
+                    {{ item.question }}
+                  </span>
+                  
+                  <!-- Arrow Toggle Icon -->
+                  <div class="shrink-0 w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-emerald-600 group-hover:bg-emerald-50 transition-colors">
+                    <svg 
+                      class="w-4 h-4 transform transition-transform duration-300"
+                      [ngClass]="{ 'rotate-90 text-emerald-600': !item.isOpen, 'rotate-180 text-emerald-700': item.isOpen }" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      stroke-width="2.5" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                  </div>
+                </button>
+
+                <!-- Answer Content -->
+                <div 
+                  *ngIf="item.isOpen && item.answer" 
+                  class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed pl-1 transition-all"
+                >
+                  <p>{{ item.answer }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: 3D Growth Bar Chart Illustration -->
+          <div class="lg:col-span-5 flex justify-center items-center">
+            <div class="relative w-full max-w-md p-6 bg-slate-50 border border-slate-200 rounded-3xl shadow-sm flex justify-center items-end h-80 sm:h-96">
+              
+              <!-- Growth Arrows Container -->
+              <div class="flex items-end justify-center gap-3 sm:gap-5 h-full pt-8 pb-4">
+                
+                <!-- 2021 Bar (Red / Pink) -->
+                <div class="flex flex-col items-center group">
+                  <div class="relative w-10 sm:w-12 h-36 bg-gradient-to-t from-pink-600 to-rose-500 rounded-t-xl shadow-md transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                    <div class="absolute -top-3 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[20px] border-b-rose-500"></div>
+                  </div>
+                  <span class="mt-4 text-xs sm:text-sm font-bold text-slate-700 -rotate-45">2021</span>
+                </div>
+
+                <!-- 2022 Bar (Green) -->
+                <div class="flex flex-col items-center group">
+                  <div class="relative w-10 sm:w-12 h-48 bg-gradient-to-t from-emerald-600 to-lime-400 rounded-t-xl shadow-md transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                    <div class="absolute -top-3 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[20px] border-b-lime-400"></div>
+                  </div>
+                  <span class="mt-4 text-xs sm:text-sm font-bold text-slate-700 -rotate-45">2022</span>
+                </div>
+
+                <!-- 2023 Bar (Yellow / Orange) -->
+                <div class="flex flex-col items-center group">
+                  <div class="relative w-10 sm:w-12 h-60 bg-gradient-to-t from-amber-600 to-amber-400 rounded-t-xl shadow-md transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                    <div class="absolute -top-3 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[20px] border-b-amber-400"></div>
+                  </div>
+                  <span class="mt-4 text-xs sm:text-sm font-bold text-slate-700 -rotate-45">2023</span>
+                </div>
+
+                <!-- 2024 Bar (Blue) -->
+                <div class="flex flex-col items-center group">
+                  <div class="relative w-10 sm:w-12 h-52 bg-gradient-to-t from-blue-600 to-sky-400 rounded-t-xl shadow-md transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                    <div class="absolute -top-3 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[20px] border-b-sky-400"></div>
+                  </div>
+                  <span class="mt-4 text-xs sm:text-sm font-bold text-slate-700 -rotate-45">2024</span>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
-    <div>
-      <div class="text-4xl">2,500+</div>
-      <div class="text-sm opacity-80 mt-1">Enterprise Clients</div>
+
+
+    <div class="min-h-screen w-full bg-white text-slate-900 font-sans py-12 px-4 sm:px-6 lg:px-8 flex items-center">
+      <div class="max-w-7xl mx-auto w-full space-y-16">
+        
+        <!-- Main Content Section: Circular Image & Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Left Column: Circular Team Image -->
+          <div class="lg:col-span-6 flex justify-center">
+            <div class="relative w-72 h-72 sm:w-96 sm:h-96 md:w-[28rem] md:h-[28rem] rounded-full overflow-hidden border-4 border-slate-100 shadow-xl">
+              <img 
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" 
+                alt="Team working around a laptop" 
+                class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+          <!-- Right Column: Heading, Description & Feature List Grid -->
+          <div class="lg:col-span-6 space-y-8">
+            
+            <!-- Headline & Subtitle -->
+            <div class="space-y-4">
+              <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight flex flex-wrap items-center gap-2">
+                <span>Improve the Online Presence of Your Business with Ads</span>
+                <span class="inline-block text-emerald-500 text-3xl sm:text-4xl animate-pulse">🧭</span>
+              </h1>
+              
+              <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                Increase the online visibility of your business website with the help of Google Ads. It is a platform where you can promote your business exclusively.
+              </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+              
+              <!-- Feature 1: Google Paid Campaigns -->
+              <div class="border-b border-slate-200 pb-4 space-y-1">
+                <div class="flex items-start gap-2">
+                  <span class="text-emerald-500 font-extrabold text-sm mt-0.5">&gt;</span>
+                  <h3 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+                    Google paid campaigns
+                  </h3>
+                </div>
+              </div>
+
+              <!-- Feature 2: SMO Techniques -->
+              <div class="border-b border-slate-200 pb-4 space-y-1">
+                <div class="flex items-start gap-2">
+                  <span class="text-emerald-500 font-extrabold text-sm mt-0.5">&gt;</span>
+                  <h3 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+                    SMO techniques
+                  </h3>
+                </div>
+              </div>
+
+              <!-- Feature 3: Organic Content Management -->
+              <div class="border-b border-slate-200 pb-4 space-y-1 sm:col-span-1">
+                <div class="flex items-start gap-2">
+                  <span class="text-emerald-500 font-extrabold text-sm mt-0.5">&gt;</span>
+                  <h3 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+                    Organic content management
+                  </h3>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Bottom Section Tagline -->
+        <div class="pt-8 text-center border-t border-slate-100">
+          <p class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900">
+            Trusted by our clients
+          </p>
+        </div>
+
+      </div>
     </div>
-    <div>
-      <div class="text-4xl">24/7</div>
-      <div class="text-sm opacity-80 mt-1">Managed NOC Support</div>
-    </div>
-  </div>
-</section>
+
+    <section class="w-full bg-white text-slate-900 font-sans py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-100">
+      <div class="max-w-7xl mx-auto space-y-12 text-center">
+        
+        <!-- Section Heading -->
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">
+          Trusted by our clients
+        </h2>
+
+        <!-- Client Logos Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 items-center justify-items-center pt-4">
+          
+          <!-- Logo 1: Vizag Industrial Scan -->
+          <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl w-full max-w-[220px] h-24 flex flex-col justify-center items-center shadow-sm hover:shadow-md transition-shadow">
+            <span class="font-extrabold text-slate-900 text-sm sm:text-base tracking-wider uppercase">
+              Vizag Industrial Scan
+            </span>
+            <span class="text-[10px] text-slate-500 uppercase tracking-widest mt-1 font-medium">
+              An Industrial Fortnightly
+            </span>
+          </div>
+
+          <!-- Logo 2: City Livelihood Centre -->
+          <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl w-full max-w-[240px] h-24 flex items-center gap-3 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-10 h-10 rounded-full border-2 border-slate-800 flex items-center justify-center shrink-0 font-bold text-xs text-slate-900">
+              CLC
+            </div>
+            <div class="text-left leading-tight">
+              <span class="font-bold text-slate-900 text-xs sm:text-sm block">City Livelihood Centre</span>
+              <span class="text-[11px] text-slate-600 block font-medium">ନଗର ଜୀବିକା କେନ୍ଦ୍ର</span>
+              <span class="text-[9px] text-slate-400 block mt-0.5">(Promoted By BMC) Executed By HTPL</span>
+            </div>
+          </div>
+
+          <!-- Logo 3: PICGEN -->
+          <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl w-full max-w-[220px] h-24 flex justify-center items-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-16 h-16 rounded-full border-2 border-slate-900 flex flex-col justify-center items-center text-center p-1">
+              <span class="font-black text-slate-900 text-xs tracking-tighter">PICGEN</span>
+              <span class="text-[7px] text-slate-500 uppercase tracking-widest">PERSONALISED GIFTS</span>
+            </div>
+          </div>
+
+          <!-- Logo 4: Astream -->
+          <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl w-full max-w-[220px] h-24 flex items-center justify-center gap-3 shadow-sm hover:shadow-md transition-shadow">
+            <!-- Geometric Logo Mark -->
+            <div class="relative w-7 h-7 flex items-center justify-center">
+              <div class="w-5 h-5 bg-slate-900 rounded-tl-full rounded-tr-sm rounded-bl-full transform -rotate-45"></div>
+              <div class="absolute -bottom-1 -right-1 w-3 h-3 bg-emerald-500 rounded-full"></div>
+            </div>
+            <div class="text-left">
+              <span class="font-black text-slate-900 text-lg tracking-tight block">Astream</span>
+              <span class="text-[8px] text-slate-500 uppercase tracking-widest font-semibold block">A STEP TOWARDS DIGITAL</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+</div>
+
+
