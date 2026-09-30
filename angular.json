@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "myapp": {
+    "SunflowerNetworksPrivteLtd": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -65,10 +65,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "myapp:build:production"
+              "buildTarget": "SunflowerNetworksPrivteLtd:build:production"
             },
             "development": {
-              "buildTarget": "myapp:build:development"
+              "buildTarget": "SunflowerNetworksPrivteLtd:build:development"
             }
           },
           "defaultConfiguration": "development"
