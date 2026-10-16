@@ -7,6 +7,7 @@ import { WebDevelopment } from './components/web-development/web-development';
 import { AppDevelopment } from './components/app-development/app-development';
 import { WebsiteMaintenance } from './components/website-maintenance/website-maintenance';
 import { DigitalMarketing } from './components/digital-marketing/digital-marketing';
+import { Pricing } from './components/pricing/pricing';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -17,5 +18,6 @@ export const routes: Routes = [
    { path: 'app-development', component: AppDevelopment },
    { path: 'website-maintenance', component: WebsiteMaintenance },
    { path: 'digital-marketing', component: DigitalMarketing },
+   { path: 'price', component: Pricing },
   { path: '**', redirectTo: '' },
 ];

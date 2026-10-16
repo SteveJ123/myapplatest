@@ -1,0 +1,15 @@
+/* Custom radial gradient background extensions if required */
+.radial-grad {
+  background: radial-gradient(105.26% 100% at 50% 0%, #F6BB22 0%, #FF2800 100%);
+}
+
+/* Smooth scaling transitions */
+.pricing-card {
+  will-change: transform, box-shadow;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Optional: Subtle zoom-out effect on sibling cards when hovering over the grid container */
+.grid:hover > .pricing-card:not(:hover) {
+  transform: scale(0.98);
+}
