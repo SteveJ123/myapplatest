@@ -1,26 +1,29 @@
-<nav class="w-full bg-white text-slate-900 font-sans border-b border-slate-200 overflow-x-hidden">
+<div class="relative  z-50">
+
+
+<nav class=" full bg-white text-slate-900 font-sans border-b border-slate-200 ">
   <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
 
-      <!-- Brand Logo & Title (Optimized width to prevent hiding the hamburger menu) -->
+
       <div class="flex items-center space-x-2 min-w-0 pr-2">
         <a routerLink="/" class="flex items-center space-x-2 min-w-0">
           <div class="flex-shrink-0 flex items-center justify-center font-bold text-slate-900 text-xl">
             <img src="logo.png" alt="logo" class="w-auto h-10 sm:h-12 object-contain" />
           </div>
           <span class="font-bold text-base sm:text-xl tracking-tight text-black truncate">
-            Sunflower<span class="text-sunflower-400"> Networks</span>
+            Sunflower Networks Private Limited
           </span>
         </a>
       </div>
 
-      <!-- Desktop Navigation -->
+
       <div class="hidden md:flex items-center space-x-8">
         <a routerLink="/" routerLinkActive="text-sunflower-400" [routerLinkActiveOptions]="{ exact: true }"
           class="text-slate-800 hover:text-emerald-600 font-medium text-sm transition-colors">Home</a>
 
-        <!-- Desktop Services Dropdown -->
-        <div class="relative inline-block text-left">
+
+        <div class="relative inline-block text-left z-100">
           <button (click)="toggleDesktopDropdown()" type="button"
             class="inline-flex items-center gap-1.5 font-semibold text-sm transition-colors focus:outline-none"
             [ngClass]="{ 'text-emerald-600': isDesktopDropdownOpen, 'text-black hover:text-emerald-600': !isDesktopDropdownOpen }"
@@ -32,7 +35,7 @@
             </svg>
           </button>
 
-          <!-- Desktop Dropdown Card -->
+
           <div *ngIf="isDesktopDropdownOpen"
             class="absolute left-0 mt-3 w-64 bg-white rounded-lg shadow-xl py-2 z-50 border border-slate-100 ring-1 ring-black ring-opacity-5 transition-all duration-150 transform origin-top-left">
             <div class="py-1">
@@ -45,6 +48,7 @@
         </div>
 
         <a routerLink="/about" routerLinkActive="text-sunflower-400" class="hover:text-sunflower-400 transition text-sm font-medium">About Us</a>
+        <a routerLink="/home" routerLinkActive="text-sunflower-400" class="hover:text-sunflower-400 transition text-sm font-medium">Home</a>
         <a routerLink="/price" routerLinkActive="text-sunflower-400" [routerLinkActiveOptions]="{ exact: true }"
           class="text-slate-800 hover:text-emerald-600 font-medium text-sm transition-colors">Price</a>
         <a routerLink="/contact" routerLinkActive="text-sunflower-400" class="hover:text-sunflower-400 transition text-sm font-medium">Contact Us</a>
@@ -53,7 +57,7 @@
           class="bg-sunflower-500 text-slate-900 px-5 py-2.5 rounded-lg font-semibold hover:bg-sunflower-400 transition shadow-md text-sm">Get Started</a>
       </div>
 
-      <!-- Mobile Menu Hamburger Button (Guaranteed visible via flex-shrink-0) -->
+
       <div class="md:hidden flex items-center flex-shrink-0">
         <button (click)="toggleMobileMenu()" type="button"
           class="text-slate-900 hover:text-emerald-600 focus:outline-none p-2 rounded-lg border border-slate-200 bg-slate-50" 
@@ -70,12 +74,12 @@
     </div>
   </div>
 
-  <!-- Mobile Navigation Drawer -->
+
   <div *ngIf="isMobileMenuOpen" class="md:hidden bg-slate-50 border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 shadow-inner">
     <a routerLink="/" routerLinkActive="text-sunflower-400" [routerLinkActiveOptions]="{ exact: true }"
       class="block text-slate-900 hover:text-emerald-600 font-medium text-base py-1">Home</a>
 
-    <!-- Mobile Collapsible Services Menu -->
+
     <div class="space-y-2">
       <button (click)="toggleMobileDropdown()" type="button"
         class="w-full flex items-center justify-between text-left font-bold text-base py-1 focus:outline-none"
@@ -112,3 +116,5 @@
     </div>
   </div>
 </nav>
+</div>
+

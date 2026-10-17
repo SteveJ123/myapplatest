@@ -8,9 +8,12 @@ import { AppDevelopment } from './components/app-development/app-development';
 import { WebsiteMaintenance } from './components/website-maintenance/website-maintenance';
 import { DigitalMarketing } from './components/digital-marketing/digital-marketing';
 import { Pricing } from './components/pricing/pricing';
+import { Preview } from './components/preview/preview';
 
 export const routes: Routes = [
-  { path: '', component: Home },
+  // { path: '', component: Home },
+  { path: '', component: Preview },
+  { path: 'home', component: Home },
   { path: 'services', component: Services },
   { path: 'about', component: About },
   { path: 'contact', component: Contact },

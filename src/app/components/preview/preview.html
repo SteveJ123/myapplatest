@@ -1,0 +1,434 @@
+<div
+  class="min-h-screen bg-white text-gray-800 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+
+  <!-- DYNAMIC HERO SLIDER SECTION (Matches Seosight Design & Colorways) -->
+  <section class="relative transition-colors duration-700 text-white py-20 lg:py-28 px-6 sm:px-12 overflow-hidden"
+    [ngClass]="slides[currentSlide()].bgClass">
+
+    <!-- Left Navigation Arrow -->
+    <button (click)="prevSlide()"
+      class="absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-black/20 hover:bg-black/40 flex items-center justify-center text-white backdrop-blur-sm transition-all">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+
+    <!-- Right Navigation Arrow -->
+    <button (click)="nextSlide()"
+      class="absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-black/20 hover:bg-black/40 flex items-center justify-center text-white backdrop-blur-sm transition-all">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+
+    <div class="max-w-4xl mx-auto relative z-20">
+      <div class="relative min-h-[420px] flex items-center">
+
+        <div *ngFor="let slide of slides; let i = index"
+          class="absolute inset-0 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center transition-all duration-700 ease-in-out"
+          [ngClass]="{'opacity-100 translate-x-0 pointer-events-auto relative': currentSlide() === i, 'opacity-0 translate-x-12 pointer-events-none absolute': currentSlide() !== i}">
+
+          <!-- Slide Text & Call to Actions -->
+          <div class="space-y-6 text-left" [ngClass]="{'animate-slide-text': currentSlide() === i}">
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+              {{ slide.title }}
+            </h1>
+            <p class="text-base sm:text-lg text-white/90 font-normal max-w-xl leading-relaxed">
+              {{ slide.subtitle }}
+            </p>
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center  gap-4 pt-4 w-full"
+              [ngClass]="{'animate-slide-button': currentSlide() === i}">
+              <a href="#"
+                class="w-full sm:w-auto text-center px-8 py-4 bg-gray-900 hover:bg-black text-white font-bold rounded-full shadow-xl transition-all transform hover:-translate-y-0.5">
+                LEARN MORE
+              </a>
+              <a href="#"
+                class="w-full sm:w-auto text-center px-8 py-4 bg-transparent hover:bg-white/10 text-white border border-white/40 font-bold rounded-full transition-all">
+                Our Services →
+              </a>
+            </div>
+          </div>
+
+          <!-- Slide Graphic Illustration -->
+          <div class="flex justify-center" [ngClass]="{'animate-slide-right': currentSlide() === i}">
+            <div class="w-full max-w-lg p-4">
+              <img [src]="slide.image" [alt]="slide.title" class="w-full h-auto object-cover drop-shadow-2xl">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Carousel Pagination Dots -->
+      <div class="flex justify-center items-center gap-3 mt-12">
+        <button *ngFor="let slide of slides; let i = index" (click)="setSlide(i)"
+          class="h-3 rounded-full transition-all duration-300"
+          [ngClass]="{'w-10 bg-white': currentSlide() === i, 'w-3 bg-white/40 hover:bg-white/70': currentSlide() !== i}"
+          [attr.aria-label]="'Slide ' + (i + 1)">
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INFO BOXES GRID -->
+  <!-- SERVICES INFO BOXES SECTION -->
+  <section class="py-20 px-6 sm:px-12 bg-white text-gray-800">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
+
+        <div *ngFor="let item of servicesList" class="flex items-start gap-6 group">
+          <!-- Icon Image -->
+          <div
+            class="flex-shrink-0 w-16 h-16 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+            <img [src]="item.image" [alt]="item.title" class="w-full h-full object-contain">
+          </div>
+
+          <!-- Text Content -->
+          <div class="space-y-2 text-left">
+            <h3 class="text-xl font-bold text-gray-900 tracking-tight">
+              {{ item.title }}
+            </h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              {{ item.subtitle }}
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DIGITAL MARKETING SERVICES SECTION -->
+  <section class="py-20 lg:py-28 px-6 sm:px-12 bg-white text-gray-800">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+      <!-- Left Column Animation Container -->
+      <div class="space-y-6 text-left transition-all duration-700 transform ease-out" >
+
+        <!-- Section Heading -->
+        <div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-gray-900 leading-tight">
+            One-stop digital marketing services
+          </h2>
+          <!-- Accent Line -->
+          <div class="flex gap-2 mt-4">
+            <span class="w-8 h-1 bg-[#32b5ab] rounded-full"></span>
+            <span class="w-12 h-1 bg-[#32b5ab] rounded-full"></span>
+          </div>
+        </div>
+
+        <!-- Subtitle Description -->
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed font-normal max-w-xl">
+          Get benefits with the best Digital Marketing Service with unique strategies. Improve the search visibility of
+          your website with the proper techniques of our digital marketing experts. Boost sales and optimize your page
+          for more user engagement.
+        </p>
+
+        <!-- Checklist Items -->
+        <ul class="space-y-4 pt-2">
+          <li class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-50 text-[#32b5ab] flex items-center justify-center font-bold mt-0.5">✓</span>
+            <span class="text-gray-600 text-sm sm:text-base leading-snug">CONVERSION</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-50 text-[#32b5ab] flex items-center justify-center font-bold mt-0.5">✓</span>
+            <span class="text-gray-600 text-sm sm:text-base leading-snug">OPTIMIZATION</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-50 text-[#32b5ab] flex items-center justify-center font-bold mt-0.5">✓</span>
+            <span class="text-gray-600 text-sm sm:text-base leading-snug">ANALYTIC</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-50 text-[#32b5ab] flex items-center justify-center font-bold mt-0.5">✓</span>
+            <span class="text-gray-600 text-sm sm:text-base leading-snug">LINK BUILDING</span>
+          </li>
+        </ul>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4 transition-all duration-1000 transform ease-out delay-200">
+          <a href="#"
+            class="text-center px-8 py-4 bg-transparent hover:bg-gray-50 text-[#32b5ab] border-2 border-[#32b5ab] font-bold rounded-full transition-all shadow-sm">
+            LEARN MORE
+          </a>
+          <a href="#"
+            class="text-center px-8 py-4 bg-[#32b5ab] hover:bg-[#28968e] text-white font-bold rounded-full shadow-lg shadow-[#32b5ab]/30 transition-all">
+            GET A QUOTE
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Right Column Illustration with its own fade/slide animation -->
+      <div class="flex justify-center transition-all duration-1000 transform ease-out delay-200">
+        <div class="w-full max-w-xl p-4">
+          <img src="Social media-amico.svg" alt="Digital Marketing Services Illustration"
+            class="w-full h-auto object-contain drop-shadow-xl">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- <section #servicesSection2 class="py-20 lg:py-28 px-6 sm:px-12 bg-white text-gray-800 overflow-hidden">
+  <div class="max-w-7xl mx-auto text-center">    
+    
+    <div class="transition-all duration-700 transform ease-out"
+         [class.opacity-100]="isAnimated2"
+         [class.translate-y-0]="isAnimated2"
+         [class.opacity-0]="!isAnimated2"
+         [class.translate-y-8]="!isAnimated2">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-gray-900 leading-tight">
+        Affordable SEO Services Packages
+      </h2>
+      <div class="flex justify-center gap-2 mt-4 mb-6">
+        <span class="w-8 h-1 bg-[#32b5ab] rounded-full"></span>
+        <span class="w-12 h-1 bg-[#32b5ab] rounded-full"></span>
+      </div>
+      <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+      </p>
+    </div>
+
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mt-16">
+      
+    
+      <div class="flex flex-col items-center text-center p-6 transition-all duration-700 transform ease-out delay-100"
+           [class.opacity-100]="isAnimated2"
+           [class.translate-y-0]="isAnimated2"
+           [class.opacity-0]="!isAnimated2"
+           [class.translate-y-12]="!isAnimated2">
+        <div class="w-36 h-36 mb-6 flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
+          <img src="info-box7.png" alt="Objective Icon" class="w-full h-full object-contain drop-shadow-md">
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">OBJECTIVE</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Investigationes demonstraverunt lectores legere.
+        </p>
+      </div>
+
+    
+      <div class="flex flex-col items-center text-center p-6 transition-all duration-700 transform ease-out delay-200"
+           [class.opacity-100]="isAnimated2"
+           [class.translate-y-0]="isAnimated2"
+           [class.opacity-0]="!isAnimated2"
+           [class.translate-y-12]="!isAnimated2">
+        <div class="w-36 h-36 mb-6 flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
+          <img src="info-box8.png" alt="Strategy Icon" class="w-full h-full object-contain drop-shadow-md">
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">STRATEGY</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Dolor sit amet, consectetuer adipiscing elit.
+        </p>
+      </div>
+
+    
+      <div class="flex flex-col items-center text-center p-6 transition-all duration-700 transform ease-out delay-300"
+           [class.opacity-100]="isAnimated2"
+           [class.translate-y-0]="isAnimated2"
+           [class.opacity-0]="!isAnimated2"
+           [class.translate-y-12]="!isAnimated2">
+        <div class="w-36 h-36 mb-6 flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
+          <img src="info-box9.png" alt="Technology Icon" class="w-full h-full object-contain drop-shadow-md">
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">TECHNOLOGY</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Nam liber tempor cum soluta nobis eleifend.
+        </p>
+      </div>
+
+    
+      <div class="flex flex-col items-center text-center p-6 transition-all duration-700 transform ease-out delay-400"
+           [class.opacity-100]="isAnimated2"
+           [class.translate-y-0]="isAnimated2"
+           [class.opacity-0]="!isAnimated2"
+           [class.translate-y-12]="!isAnimated2">
+        <div class="w-36 h-36 mb-6 flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
+          <img src="info-box10.png" alt="Analytics Icon" class="w-full h-full object-contain drop-shadow-md">
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">ANALYTICS</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Eodem modo typi, qui nunc nobis videntur parum.
+        </p>
+      </div>
+
+    </div>
+
+    
+    <div class="flex flex-wrap justify-center items-center gap-4 mt-14 transition-all duration-700 transform ease-out delay-500"
+         [class.opacity-100]="isAnimated2"
+         [class.translate-y-0]="isAnimated2"
+         [class.opacity-0]="!isAnimated2"
+         [class.translate-y-8]="!isAnimated2">
+      <a href="#" class="px-8 py-4 bg-gray-900 hover:bg-gray-800 text-white text-sm font-bold rounded-full transition-all shadow-md">
+        MORE INFO
+      </a>
+      <a href="#" class="px-8 py-4 bg-[#32b5ab] hover:bg-[#28968e] text-white text-sm font-bold rounded-full shadow-lg shadow-[#32b5ab]/30 transition-all">
+        GET STARTED!
+      </a>
+    </div>
+
+  </div>
+</section> -->
+
+  <section class="w-full bg-slate-50/50 py-12 lg:py-20 px-4 sm:px-6 lg:px-12 font-sans">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+
+        <!-- Left Column: Content & FAQ Accordion -->
+        <div class="lg:col-span-7 flex flex-col justify-center">
+
+          <!-- Section Title & Subtitle -->
+          <div class="mb-8">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mb-4">
+              E-commerce Integration
+            </h2>
+            <p class="text-base sm:text-lg text-slate-600 font-normal max-w-2xl leading-relaxed">
+              Specializing the website with unique E-commerce features integration to develop a user-centric web page.
+            </p>
+          </div>
+
+          <!-- FAQ Accordion List -->
+          <div class="space-y-4">
+            <div *ngFor="let item of faqs" class="border-b border-slate-200/80 pb-4 transition-all duration-200">
+
+              <!-- Accordion Header Button -->
+              <button (click)="toggleFaq(item.id)" type="button"
+                class="w-full flex items-center justify-between text-left gap-4 py-3 focus:outline-none group">
+                <span
+                  class="text-sm sm:text-base font-extrabold text-slate-900 tracking-wide uppercase transition-colors group-hover:text-teal-600">
+                  {{ item.question }}
+                </span>
+
+                <!-- Toggle Indicator Circle -->
+                <div [class.bg-teal-500]="item.isOpen" [class.text-white]="item.isOpen"
+                  [class.bg-teal-50]="!item.isOpen" [class.text-teal-600]="!item.isOpen"
+                  class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 shadow-sm">
+
+                  <svg class="w-4 h-4 transition-transform duration-300" [class.rotate-180]="item.isOpen" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </button>
+
+              <!-- Accordion Expandable Content -->
+              <div *ngIf="item.isOpen"
+                class="mt-2 pr-6 text-sm sm:text-base text-slate-600 leading-relaxed animate-fadeIn">
+                <p>{{ item.answer }}</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Animated Chart Card Illustration -->
+        <div class="lg:col-span-5 flex justify-center items-center">
+          <div
+            class="w-full max-w-lg  border border-slate-200/60 rounded-3xl p-6 sm:p-10 shadow-sm hover:shadow-md transition-shadow duration-300">
+
+            <!-- SVG Bar Chart Illustration -->            
+            <div class="w-full max-w-xl p-4">
+          <img src="undraw_image-dropzone_zdre.svg" alt="Digital Marketing Services Illustration"
+            class="w-full h-auto object-contain drop-shadow-xl">
+        </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 sm:py-20 lg:py-28 px-6 sm:px-12 bg-white text-gray-900 font-sans overflow-hidden">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+      <!-- Left Column: Circular Masked Image / unDraw SVG Container -->
+      <div class="lg:col-span-5 flex justify-center items-center">
+        <div
+          class="w-full max-w-lg  border border-slate-200/60 rounded-3xl p-6 sm:p-10 shadow-sm hover:shadow-md transition-shadow duration-300">
+
+          <!-- Choice A: Real Photo / Image (Unsplash / Local Asset) -->
+          <img src="undraw_mobile-post_zwbe.svg"
+            alt="Team working on online presence and ads"
+            class="w-full h-full object-cover object-center transform transition-transform duration-700 group-hover:scale-105"
+            loading="lazy" />
+
+          <!-- Choice B: Alternative unDraw SVG Illustration (Uncomment if you prefer inline SVG vector) -->
+          <!-- 
+        <div class="w-full h-full p-8 flex items-center justify-center bg-teal-50">
+          <svg class="w-full h-full" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M700 450H100C88.9543 450 80 441.046 80 430V150C80 138.954 88.9543 130 100 130H700C711.046 130 720 138.954 720 150V430C720 441.046 711.046 450 700 450Z" fill="#E0F2FE"/>
+            <rect x="120" y="170" width="560" height="240" rx="10" fill="#0284C7"/>
+            <path d="M160 360L280 260L380 310L520 200L640 280" stroke="#38BDF8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="520" cy="200" r="12" fill="#FACC15"/>
+          </svg>
+        </div>
+        -->
+
+        </div>
+      </div>
+
+      <!-- Right Column: Heading, Description, and Bullet Items -->
+      <div class="lg:col-span-7 space-y-6 text-left">
+
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight leading-tight">
+          Improve the Online Presence of Your Business with Ads
+        </h2>
+
+        <!-- Small Compass Accent Icon -->
+        <div class="flex items-center gap-2 pt-1">
+          <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 shadow-sm">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Description Paragraph -->
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed font-normal max-w-2xl">
+          Increase the online visibility of your business website with the help of Google Ads. It is a platform where
+          you can promote your business exclusively.
+        </p>
+
+        <!-- Key Points / Features List Grid -->
+        <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+          <!-- Item 1 -->
+          <div class="flex items-center gap-2.5 py-2 border-b border-gray-100 sm:border-none">
+            <span class="text-[#32b5ab] font-bold text-lg">&gt;</span>
+            <span class="font-bold text-gray-900 text-sm sm:text-base">Google paid campaigns</span>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="flex items-center gap-2.5 py-2 border-b border-gray-100 sm:border-none">
+            <span class="text-[#32b5ab] font-bold text-lg">&gt;</span>
+            <span class="font-bold text-gray-900 text-sm sm:text-base">SMO techniques</span>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="flex items-center gap-2.5 py-2 border-b border-gray-100 sm:border-none">
+            <span class="text-[#32b5ab] font-bold text-lg">&gt;</span>
+            <span class="font-bold text-gray-900 text-sm sm:text-base">Organic content management</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>

@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 interface PricingPlan {
   id: string;
   name: string;
+  image: string;
   badge?: string;
   price: string;
   billingPeriod: string;
@@ -25,6 +26,7 @@ export class Pricing {
       id: 'basic',
       name: 'Basic',
       price: 'Zero',
+      image: 'planning-strategy.png',
       billingPeriod: 'Fixed Fee',
       commission: '10%',
       commissionSubtext: 'commissions (including Indian Payment Gateway)*',
@@ -47,6 +49,7 @@ export class Pricing {
     {
       id: 'pro',
       name: 'Pro',
+      image: 'premier-pro.png',
       price: '₹5,000',
       billingPeriod: '+GST /month',
       commission: '+ 5.5%',
@@ -67,6 +70,7 @@ export class Pricing {
     {
       id: 'advanced',
       name: 'Advanced',
+      image: 'high-quality.png',
       price: '₹15,000',
       billingPeriod: '+GST /month',
       commission: '+ 3.5%',
@@ -87,6 +91,7 @@ export class Pricing {
     {
       id: 'ultimate',
       name: 'Ultimate',
+      image: 'info-box4.png',
       badge: 'AI-Verse Stack Included',
       price: '₹30,000',
       billingPeriod: '+GST /month',
