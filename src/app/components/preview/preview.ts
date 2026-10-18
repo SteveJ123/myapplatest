@@ -33,7 +33,7 @@ export class Preview {
       title: 'Web Application Development',
       subtitle: 'Global Cloud Hosting & Infrastructure Management',
       image: 'Development-cuate.svg',
-      bgClass: 'bg-[#32b5ab]' // Teal theme
+      bgClass: 'bg-[#32b5ab]' 
     },
     {
       title: 'Social Media Marketing Services',
@@ -66,32 +66,32 @@ servicesList = [
   {
     title: 'Website Development',
     subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.',
-    image: 'app-settings.png'
+    image: 'archid-web-removebg-preview.png'
   },
   {
     title: 'App Development',
     subtitle: 'Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.',
-    image: 'app-development.png'
+    image: 'lotus-app-removebg-preview.png'
   },
   {
     title: 'Digital Marketing',
     subtitle: 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius notare.',
-    image: 'bullhorn.png'
+    image: 'hibiscus-digital-removebg-preview.png'
   },
   {
     title: 'Website Maintenance',
     subtitle: 'Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.',
-    image: 'mechanic.png'
+    image: 'lavendar-maintenance-removebg-preview.png'
   },
   {
     title: 'Graphic Design',
     subtitle: 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius notare.',
-    image: 'illustration.png'
+    image: 'rose-graphic-removebg-preview.png'
   },
   {
     title: 'Domain & Hosting',
     subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.',
-    image: 'domain-servers.png'
+    image: 'tulip-hosting-removebg-preview.png'
   }
 ];
 
