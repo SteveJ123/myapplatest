@@ -32,32 +32,32 @@ export class Preview {
     {
       title: 'Web Application Development',
       subtitle: 'Global Cloud Hosting & Infrastructure Management',
-      image: 'Development-cuate.svg',
+      image: 'development-cuate.png',  //  Development-cuate.svg
       bgClass: 'bg-[#32b5ab]' 
     },
     {
       title: 'Social Media Marketing Services',
       subtitle: 'An effective social strategy can help you grow your business, maintain your social presence and engage with the audience.',
-      image: 'Recording a movie-pana.svg',
-      bgClass: 'bg-[#f47432]' // Orange theme
+      image: 'recordingamovie-pana.png', // Recording a movie-pana.svg
+       bgClass: 'bg-[#f47432]'  //Orange theme
     },
     {
       title: 'App Development',
       subtitle: 'Web Development',
-      image: 'Mobile testing-pana.svg',
-      bgClass: 'bg-[#32b5ab]' // Teal theme
+      image: 'appdevelopment.png', // appdevelopment.png  Mobile testing-pana.svg
+       bgClass: 'bg-[#32b5ab]' 
     },
     {
       title: 'Website Maintenance',
       subtitle: 'Global Cloud Hosting & Infrastructure Management',
-      image: 'Maintenance-pana.svg',
-      bgClass: 'bg-[#f4a132]' // Yellow-Orange theme
+      image: 'maintenance-pana.png',
+       bgClass: 'bg-[#f4a132]' 
     },
     {
       title: 'Domain & Hosting',
       subtitle: 'Global Cloud Hosting & Infrastructure Management',
-      image: 'Finance app-cuate.svg',
-      bgClass: 'bg-[#32b5ab]' // Teal theme
+      image: 'financeapp-cuate.png', //Financeapp-cuate.png Finance app-cuate.png
+      bgClass: 'bg-[#32b5ab]' 
     }
   ];
 
@@ -65,32 +65,32 @@ export class Preview {
 servicesList = [
   {
     title: 'Website Development',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.',
+    subtitle: 'Transform your online presence with custom web solutions. We specialize in building fast, secure, and mobile-friendly websites featuring seamless database integration, intuitive navigation, and user-focused design.',
     image: 'archid-web-removebg-preview.png'
   },
   {
     title: 'App Development',
-    subtitle: 'Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.',
+    subtitle: 'We design and develop custom, high-performance digital applications tailored to your institutional needs. From intuitive, responsive user interfaces built with modern frameworks to robust backend APIs and secure database integration, we deliver seamless and scalable digital experiences.',
     image: 'lotus-app-removebg-preview.png'
   },
   {
     title: 'Digital Marketing',
-    subtitle: 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius notare.',
+    subtitle: "Grow your institute's presence with results-driven digital campaigns. From social media engagement to local search visibility, we help you reach students and parents looking for quality education and holistic growth.",
     image: 'hibiscus-digital-removebg-preview.png'
   },
   {
     title: 'Website Maintenance',
-    subtitle: 'Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.',
+    subtitle: 'Protect your digital investment. We handle ongoing updates, speed tuning, and security monitoring so your website remains lightning-fast, secure, and fully functional.',
     image: 'lavendar-maintenance-removebg-preview.png'
   },
   {
     title: 'Graphic Design',
-    subtitle: 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius notare.',
+    subtitle: 'Bring your brand to life with stunning visuals. We design professional banners, course slides, and promotional materials tailored to engage students and parents alike.',
     image: 'rose-graphic-removebg-preview.png'
   },
   {
     title: 'Domain & Hosting',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.',
+    subtitle: 'Ensure your digital platform is always online, lightning-fast, and completely secure. We provide reliable domain registration, seamless DNS management, and high-performance hosting solutions configured specifically to keep your website and student registration workflows running smoothly 24/7.',
     image: 'tulip-hosting-removebg-preview.png'
   }
 ];
