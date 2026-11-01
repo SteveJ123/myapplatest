@@ -28,16 +28,16 @@
 
 body {
   /* Semi-transparent white overlay over background image */
-  background-image: url('/background.jpg');
+  /* background-image: url('/background.jpg'); */
   
   /* Layout & Positioning */
   /* background-size: cover;
   background-position: center;
   background-repeat: no-repeat; */
-  background-size: contain;
+  /* background-size: contain;
   background-position: center;
   background-repeat: repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 /* Selection styles (selection:text-white) */

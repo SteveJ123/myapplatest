@@ -30,6 +30,18 @@ export class Preview {
   
   slides = [
     {
+      title: '',
+      subtitle: '',
+      image: 'sunflowrenetworks.jpeg',  //  Development-cuate.svg
+      bgClass: 'bg-[#32b5ab]' 
+    },
+    {
+      title: '',
+      subtitle: '',
+      image: 'mentor.jpeg',  //  Development-cuate.svg
+      bgClass: 'bg-[#32b5ab]' 
+    },
+    {
       title: 'Web Application Development',
       subtitle: 'Global Cloud Hosting & Infrastructure Management',
       image: 'development-cuate.png',  //  Development-cuate.svg
@@ -62,7 +74,7 @@ export class Preview {
   ];
 
   // Add this data array inside your LandingComponent class
-servicesList = [
+servicesList = [  
   {
     title: 'Website Development',
     subtitle: 'Transform your online presence with custom web solutions. We specialize in building fast, secure, and mobile-friendly websites featuring seamless database integration, intuitive navigation, and user-focused design.',
