@@ -45,13 +45,13 @@ export class Preview {
       title: 'Web Application Development',
       subtitle: 'Global Cloud Hosting & Infrastructure Management',
       image: 'development-cuate.png',  //  Development-cuate.svg
-      bgClass: 'bg-[#32b5ab]' 
+      bgClass: 'bg-[#32b5ab]'  //bg-[#32b5ab]
     },
     {
       title: 'Social Media Marketing Services',
       subtitle: 'An effective social strategy can help you grow your business, maintain your social presence and engage with the audience.',
       image: 'recordingamovie-pana.png', // Recording a movie-pana.svg
-       bgClass: 'bg-[#f47432]'  //Orange theme
+       bgClass: 'bg-[#32b5ab]'  //Orange theme bg-[#f47432]
     },
     {
       title: 'App Development',
@@ -63,7 +63,7 @@ export class Preview {
       title: 'Website Maintenance',
       subtitle: 'Global Cloud Hosting & Infrastructure Management',
       image: 'maintenance-pana.png',
-       bgClass: 'bg-[#f4a132]' 
+       bgClass: 'bg-[#f47432]'  //bg-[#f4a132]
     },
     {
       title: 'Domain & Hosting',
