@@ -42,7 +42,7 @@ export class Services {
   },
   {
     title: 'Domain & Hosting',
-    description: 'Ensure your digital platform is always online, lightning-fast, and completely secure. We provide reliable domain registration, seamless DNS management, and high-performance hosting solutions configured specifically to keep your website and student registration workflows running smoothly 24/7.',
+    description: 'Ensure your digital platform is always online, lightning-fast, and completely secure. We provide reliable domain registration, seamless DNS management, and high-performance hosting solutions.',
     icon: 'tulip-hosting-removebg-preview.png',
     route: "/domain-hosting"
   }
