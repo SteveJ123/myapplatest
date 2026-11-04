@@ -41,7 +41,7 @@ export class Pricing {
         'Email Broadcasting (10 email credits/ user) & Automations',
         'Storefront',
         'Certificates & Security',
-        'Access to TagMango Community',
+        'Access to SunFlower Networks Community',
         'Zapier & Pabbly Integration',
         'Path'
       ]
