@@ -40,7 +40,4 @@ body {
   background-attachment: fixed; */
 }
 
-/* Selection styles (selection:text-white) */
-::selection {
-  color: #ffffff;
-}
+/* Selection styles () */
