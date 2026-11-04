@@ -9,6 +9,9 @@ import { WebsiteMaintenance } from './components/website-maintenance/website-mai
 import { DigitalMarketing } from './components/digital-marketing/digital-marketing';
 import { Pricing } from './components/pricing/pricing';
 import { Preview } from './components/preview/preview';
+import { DomainHosting } from './components/domain-hosting/domain-hosting';
+import { GraphicDesign } from './components/graphic-design/graphic-design';
+
 
 export const routes: Routes = [
   // { path: '', component: Home },
@@ -21,6 +24,8 @@ export const routes: Routes = [
    { path: 'app-development', component: AppDevelopment },
    { path: 'website-maintenance', component: WebsiteMaintenance },
    { path: 'digital-marketing', component: DigitalMarketing },
+   { path: 'graphic-design', component:  GraphicDesign},
+   { path: 'domain-hosting', component:  DomainHosting},
    { path: 'price', component: Pricing },
   { path: '**', redirectTo: '' },
 ];
