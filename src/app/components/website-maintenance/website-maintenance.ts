@@ -15,7 +15,7 @@ export class WebsiteMaintenance {
       name: ['', Validators.required],
       phone: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      service: ['Website Development', Validators.required],
+      service: ['Website Maintenance', Validators.required],
       businessType: ['', Validators.required],
       location: ['', Validators.required],
       message: ['', Validators.required]

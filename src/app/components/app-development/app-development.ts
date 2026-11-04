@@ -16,7 +16,7 @@ export class AppDevelopment {
       name: ['', Validators.required],
       phone: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      service: ['Website Development', Validators.required],
+      service: ['App Development', Validators.required],
       businessType: ['', Validators.required],
       location: ['', Validators.required],
       message: ['', Validators.required]

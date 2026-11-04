@@ -18,7 +18,9 @@ isDesktopDropdownOpen = false;
     { label: 'Website Development', link: 'website-development' },
     { label: 'App Development', link: 'app-development' },
     { label: 'Website Maintenance', link: 'website-maintenance' },
-    { label: 'Digital Marketing', link: 'digital-marketing' }
+    { label: 'Digital Marketing', link: 'digital-marketing' },
+    { label: 'Graphic Design', link: 'graphic-design' },
+    { label: 'Domain & Hosting', link: 'domain-hosting' }
   ];
 
   constructor(private elementRef: ElementRef) {}

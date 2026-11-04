@@ -15,7 +15,7 @@ export class DigitalMarketing {
       name: ['', Validators.required],
       phone: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      service: ['Website Development', Validators.required],
+      service: ['Digital Marketing', Validators.required],
       businessType: ['', Validators.required],
       location: ['', Validators.required],
       message: ['', Validators.required]
