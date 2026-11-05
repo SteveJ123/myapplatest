@@ -230,20 +230,20 @@ private hasLoaded = false;
   faqs: any[] = [
     {
       id: 1,
-      question: 'Which type of E-commerce websites have you developed in the past?',
-      answer: 'We have built a wide range of platforms including single-vendor web stores, multi-vendor marketplaces, subscription platforms, and customized B2B portals across fashion, tech, and retail sectors.',
+      question: 'Which type of E-Learning platforms have you developed in the past?',
+      answer: 'We have built a wide range of educational platforms including single-instructor course portals, multi-instructor marketplaces, live video batch systems, subscription-based learning hubs, and customized corporate B2B training portals across technical, academic, and professional sectors.',
       isOpen: false
     },
     {
       id: 2,
-      question: 'How much time does it need for an online store to go live?',
-      answer: 'It depends. Actually developing an E-commerce website is not an easy thing. It requires many features as well as a specific language to design an e-commerce site. At us, we take the time period very seriously, and our experts design it in a very short time period. Normally it takes a month to design an e-commerce website but we can make it quick for you.',
+      question: 'How much time does it take for an online learning platform to go live?',
+      answer: 'It depends on the complexity of your requirements. Developing a full-featured E-Learning platform involves setting up live streaming, video hosting, user roles, and payment integration. At our agency, we value your timeline and focus on efficient, high-quality development. Typically, a standard live course platform takes about 3 to 4 weeks to launch, but we can fast-track the process to meet your specific launch date.',
       isOpen: true
     },
     {
       id: 3,
-      question: 'What if I face any issues on my E-commerce website after delivery?',
-      answer: 'We offer dedicated post-launch support and maintenance plans. Our technical team is available to assist with bug fixes, performance optimizations, and feature enhancements whenever needed.',
+      question: 'What if I face any issues on my E-Learning website after delivery?',
+      answer: 'We offer dedicated post-launch support and maintenance plans. Our technical team is available to assist with bug fixes, streaming optimizations, platform scaling, and feature enhancements whenever needed.',
       isOpen: false
     }
   ];
