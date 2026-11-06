@@ -87,7 +87,7 @@ servicesList = [
   },
   {
     title: 'Digital Marketing',
-    subtitle: "Grow your institute's presence with results-driven digital campaigns. From social media engagement to local search visibility, we help you reach students and parents looking for quality education and holistic growth.",
+    subtitle: "Grow your institute's presence with results-driven digital campaigns. From social media engagement across platforms like Instagram, Facebook, LinkedIn, and YouTube to local search visibility, we help you reach students and parents looking for quality education and holistic growth.",
     image: 'hibiscus-digital-removebg-preview.png'
   },
   {
