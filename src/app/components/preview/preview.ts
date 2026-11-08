@@ -38,43 +38,43 @@ export class Preview {
     title: '',
     subtitle: '',
     image: 'sunflowrenetworks.jpeg',  //  Development-cuate.svg
-    bgClass: 'bg-[#32b5ab]'
+    bgClass: ''
   },
   {
     title: '',
     subtitle: '',
     image: 'mentor.jpeg',  //  Development-cuate.svg
-    bgClass: 'bg-[#32b5ab]'
+    bgClass: ''
   },
   {
     title: 'Web Application Development',
     subtitle: 'Global Cloud Hosting & Infrastructure Management',
     image: 'development-cuate.png',  //  Development-cuate.svg
-    bgClass: 'bg-[#32b5ab]'  //bg-[#32b5ab]
+    bgClass: ''  //bg-[#32b5ab]
   },
   {
     title: 'Social Media Marketing Services',
     subtitle: 'An effective social strategy can help you grow your business, maintain your social presence and engage with the audience.',
     image: 'recordingamovie-pana.png', // Recording a movie-pana.svg
-    bgClass: 'bg-[#32b5ab]'  //Orange theme bg-[#f47432]
+    bgClass: ''  //Orange theme bg-[#f47432]
   },
   {
     title: 'App Development',
     subtitle: 'Web Development',
     image: 'appdevelopment.png', // appdevelopment.png  Mobile testing-pana.svg
-    bgClass: 'bg-[#32b5ab]'
+    bgClass: ''
   },
   {
     title: 'Website Maintenance',
     subtitle: 'Global Cloud Hosting & Infrastructure Management',
     image: 'maintenance-pana.png',
-    bgClass: 'bg-[#f47432]'  //bg-[#f4a132]
+    bgClass: ''  //bg-[#f4a132]
   },
   {
     title: 'Domain & Hosting',
     subtitle: 'Global Cloud Hosting & Infrastructure Management',
     image: 'financeapp-cuate.png', //Financeapp-cuate.png Finance app-cuate.png
-    bgClass: 'bg-[#32b5ab]'
+    bgClass: ''
   }
   ];
 
