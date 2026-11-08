@@ -25,57 +25,61 @@ export class Preview {
   signInUser: string = '';
   signInPass: string = '';
 
-  
+
   currentSlide = signal<number>(0);
-  
-  slides = [
-    {
-      title: '',
-      subtitle: '',
-      image: 'sunflowrenetworks.jpeg',  //  Development-cuate.svg
-      bgClass: 'bg-[#32b5ab]' 
-    },
-    {
-      title: '',
-      subtitle: '',
-      image: 'mentor.jpeg',  //  Development-cuate.svg
-      bgClass: 'bg-[#32b5ab]' 
-    },
-    {
-      title: 'Web Application Development',
-      subtitle: 'Global Cloud Hosting & Infrastructure Management',
-      image: 'development-cuate.png',  //  Development-cuate.svg
-      bgClass: 'bg-[#32b5ab]'  //bg-[#32b5ab]
-    },
-    {
-      title: 'Social Media Marketing Services',
-      subtitle: 'An effective social strategy can help you grow your business, maintain your social presence and engage with the audience.',
-      image: 'recordingamovie-pana.png', // Recording a movie-pana.svg
-       bgClass: 'bg-[#32b5ab]'  //Orange theme bg-[#f47432]
-    },
-    {
-      title: 'App Development',
-      subtitle: 'Web Development',
-      image: 'appdevelopment.png', // appdevelopment.png  Mobile testing-pana.svg
-       bgClass: 'bg-[#32b5ab]' 
-    },
-    {
-      title: 'Website Maintenance',
-      subtitle: 'Global Cloud Hosting & Infrastructure Management',
-      image: 'maintenance-pana.png',
-       bgClass: 'bg-[#f47432]'  //bg-[#f4a132]
-    },
-    {
-      title: 'Domain & Hosting',
-      subtitle: 'Global Cloud Hosting & Infrastructure Management',
-      image: 'financeapp-cuate.png', //Financeapp-cuate.png Finance app-cuate.png
-      bgClass: 'bg-[#32b5ab]' 
-    }
+
+  slides = [{
+    title: "",
+    subtitle: "",
+    image: "diwali.png",
+    bgClass: ""
+  },
+  {
+    title: '',
+    subtitle: '',
+    image: 'sunflowrenetworks.jpeg',  //  Development-cuate.svg
+    bgClass: 'bg-[#32b5ab]'
+  },
+  {
+    title: '',
+    subtitle: '',
+    image: 'mentor.jpeg',  //  Development-cuate.svg
+    bgClass: 'bg-[#32b5ab]'
+  },
+  {
+    title: 'Web Application Development',
+    subtitle: 'Global Cloud Hosting & Infrastructure Management',
+    image: 'development-cuate.png',  //  Development-cuate.svg
+    bgClass: 'bg-[#32b5ab]'  //bg-[#32b5ab]
+  },
+  {
+    title: 'Social Media Marketing Services',
+    subtitle: 'An effective social strategy can help you grow your business, maintain your social presence and engage with the audience.',
+    image: 'recordingamovie-pana.png', // Recording a movie-pana.svg
+    bgClass: 'bg-[#32b5ab]'  //Orange theme bg-[#f47432]
+  },
+  {
+    title: 'App Development',
+    subtitle: 'Web Development',
+    image: 'appdevelopment.png', // appdevelopment.png  Mobile testing-pana.svg
+    bgClass: 'bg-[#32b5ab]'
+  },
+  {
+    title: 'Website Maintenance',
+    subtitle: 'Global Cloud Hosting & Infrastructure Management',
+    image: 'maintenance-pana.png',
+    bgClass: 'bg-[#f47432]'  //bg-[#f4a132]
+  },
+  {
+    title: 'Domain & Hosting',
+    subtitle: 'Global Cloud Hosting & Infrastructure Management',
+    image: 'financeapp-cuate.png', //Financeapp-cuate.png Finance app-cuate.png
+    bgClass: 'bg-[#32b5ab]'
+  }
   ];
 
   // Add this data array inside your LandingComponent class
-servicesList = [  
-  {
+  servicesList = [{
     title: 'Website Development',
     subtitle: 'Transform your online presence with custom web solutions. We specialize in building fast, secure, and mobile-friendly websites featuring seamless database integration, intuitive navigation, and user-focused design.',
     image: 'archid-web-removebg-preview.png'
@@ -105,18 +109,18 @@ servicesList = [
     subtitle: 'Ensure your digital platform is always online, lightning-fast, and completely secure. We provide reliable domain registration, seamless DNS management, and high-performance hosting solutions configured specifically to keep your website and student registration workflows running smoothly 24/7.',
     image: 'tulip-hosting-removebg-preview.png'
   }
-];
+  ];
 
-private slideInterval: any;
-slideDirection = signal<'left' | 'right'>('right'); // Tracks animation direction
-private cd = inject(ChangeDetectorRef)
-// @ViewChild('servicesSection') servicesSection!: ElementRef;
-//   isAnimated = false;
+  private slideInterval: any;
+  slideDirection = signal<'left' | 'right'>('right'); // Tracks animation direction
+  private cd = inject(ChangeDetectorRef)
+  // @ViewChild('servicesSection') servicesSection!: ElementRef;
+  //   isAnimated = false;
 
   // @ViewChild('servicesSection2') servicesSection2!: ElementRef;
   // isAnimated2 = false;
- 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
   ngOnInit() {
     // Auto-advance carousel every 4 seconds
@@ -128,14 +132,14 @@ private cd = inject(ChangeDetectorRef)
     // this.checkScroll2();    
   }
 
-private hasLoaded = false;
+  private hasLoaded = false;
 
-// @HostListener('window:scroll', [])
-//   onWindowScroll() {
-//     this.checkScroll();
-//     this.checkScroll2();
-    
-//   }
+  // @HostListener('window:scroll', [])
+  //   onWindowScroll() {
+  //     this.checkScroll();
+  //     this.checkScroll2();
+
+  //   }
 
   // @HostListener('window:scroll', [])
   // onWindowScroll() {
@@ -153,7 +157,7 @@ private hasLoaded = false;
   //   } else {
   //     this.isAnimated = false; // Reset to false when scrolled out of view
   //   }
-    
+
   //   this.cd.detectChanges();
   // }
   // }
@@ -163,13 +167,13 @@ private hasLoaded = false;
   //   const rect = this.servicesSection2.nativeElement.getBoundingClientRect();
   //   const windowHeight = window.innerHeight;
 
-  
+
   //   if (rect.top <= windowHeight * 0.8 && rect.bottom >= 0) {
   //     this.isAnimated2 = true;
   //   } else {
   //     this.isAnimated2 = false; 
   //   }
-    
+
   //   this.cd.detectChanges();
   // }
   // }
