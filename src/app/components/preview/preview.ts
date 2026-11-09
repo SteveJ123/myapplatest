@@ -28,12 +28,7 @@ export class Preview {
 
   currentSlide = signal<number>(0);
 
-  slides = [{
-    title: "",
-    subtitle: "",
-    image: "diwali.png",
-    bgClass: ""
-  },
+  slides = [
   {
     title: '',
     subtitle: '',
